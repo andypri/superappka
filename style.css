@@ -1,0 +1,153 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+/*
+	BARVY
+	sede pozadi      #e5e5e5
+	svetle fialova   #48418e
+	tmave fialova    #25133d
+
+	POUZITE PISMO
+	Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+	https://fonts.google.com/specimen/Roboto
+	Písmo už je v HTML nalinkované a v CSS nastavené pro body.
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.obal {
+  /* obsah stránky je omezený do pruhu širokého 960px */
+  width: 960px;
+
+  /* pruh je na stránce vycentrovaný */
+  margin: 0 auto;
+
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+.horni_lista {
+  display: flex;
+}
+
+.horni_lista p {
+  font-weight: bold;
+  padding: 15px 30px;
+  margin: 0;
+  color: #25133d;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 30px;
+  margin: 0;
+  text-decoration: none;
+  color: #25133d;
+}
+
+.design:hover,
+.funkce:hover,
+.odkaz:hover {
+  background-color: #48418e;
+  color: white;
+}
+
+.obrazek {
+  margin: 0;
+  padding: 30px;
+  min-height: 450px;
+  background-image: url(images/pozadi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.nazev {
+  font-size: 90px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.tlacitka {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.tlacitka a {
+  display: block;
+  padding: 15px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.stazeni {
+  margin-right: 30px;
+}
+
+.stazeni:hover,
+.informace:hover {
+  background-color: #48418e;
+}
+
+.telefon {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.detail {
+  display: flex;
+}
+
+.detail h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #48418e;
+}
+
+.cestuj,
+.chatuj,
+.zazij {
+  text-align: center;
+  padding: 30px;
+}
+
+.paticka {
+  background-color: #48418e;
+  color: white;
+  text-align: center;
+  line-height: 3;
+}
