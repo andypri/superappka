@@ -13,14 +13,14 @@
     <!-- menu -->
     <!-- Flex nastavit na ul = první rodič všech li (potomků), margin + padding = 0, list-style = none -->
     <div class="obal">
-      <header class="horni_lista">
-        <p class="aplikace">SUPER APPKA</p>
+      <header class="horni-lista">
+        <p class="horni-lista__aplikace">SUPER APPKA</p>
 
         <nav>
           <ul class="menu">
-            <li><a class="design" href="#">Úžasný design</a></li>
-            <li><a class="funkce" href="#">Boží funkce</a></li>
-            <li><a class="odkaz" href="#">Zdarma ke stažení</a></li>
+            <li><a class="menu__design" href="#">Úžasný design</a></li>
+            <li><a class="menu__funkce" href="#">Boží funkce</a></li>
+            <li><a class="menu__odkaz" href="#">Zdarma ke stažení</a></li>
           </ul>
         </nav>
       </header>
@@ -38,8 +38,8 @@
 
           <!-- Lze řešit přes inline-block i přes flexbox -->
           <div class="tlacitka">
-            <a class="stazeni" href="#">Stáhnout zdarma</a>
-            <a class="informace" href="#">Více informací</a>
+            <a class="tlacitka__stazeni" href="#">Stáhnout zdarma</a>
+            <a class="tlacitka__informace" href="#">Více informací</a>
           </div>
 
           <img class="telefon" src="images/telefon.png" alt="Telefon" />
@@ -49,12 +49,11 @@
         <section class="detail">
           <article class="cestuj">
             <img
-              class="letadlo"
+              class="cestuj__letadlo"
               src="images/letadlo.svg"
               alt="Letadlo"
-              width="60"
             />
-            <h2>Cestuj po světě</h2>
+            <h2 class="cestuj__nadpis">Cestuj po světě</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
               perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
@@ -64,12 +63,11 @@
 
           <article class="chatuj">
             <img
-              class="bubliny"
+              class="chatuj__bubliny"
               src="images/bubliny.svg"
               alt="Bubliny"
-              width="60"
             />
-            <h2>Chatuj s přáteli</h2>
+            <h2 class="chatuj__nadpis">Chatuj s přáteli</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
               perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
@@ -78,8 +76,8 @@
           </article>
 
           <article class="zazij">
-            <img class="mapa" src="images/mapa.svg" alt="Mapa" width="60" />
-            <h2>Zažij dobrodružství</h2>
+            <img class="zazij__mapa" src="images/mapa.svg" alt="Mapa" />
+            <h2 class="zazij__nadpis">Zažij dobrodružství</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
               perferendis maxime quisquam cum ut nobis corporis ipsa eveniet

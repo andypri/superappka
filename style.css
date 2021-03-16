@@ -42,11 +42,11 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
-.horni_lista {
+.horni-lista {
   display: flex;
 }
 
-.horni_lista p {
+.horni-lista__aplikace {
   font-weight: bold;
   padding: 15px 30px;
   margin: 0;
@@ -60,7 +60,9 @@ body {
   list-style: none;
 }
 
-.menu a {
+.menu__design,
+.menu__funkce,
+.menu__odkaz {
   display: block;
   padding: 15px 30px;
   margin: 0;
@@ -68,9 +70,9 @@ body {
   color: #25133d;
 }
 
-.design:hover,
-.funkce:hover,
-.odkaz:hover {
+.menu__design:hover,
+.menu__funkce:hover,
+.menu__odkaz:hover {
   background-color: #48418e;
   color: white;
 }
@@ -103,7 +105,8 @@ body {
   padding-bottom: 30px;
 }
 
-.tlacitka a {
+.tlacitka__stazeni,
+.tlacitka__informace {
   display: block;
   padding: 15px 30px;
   font-size: 20px;
@@ -113,13 +116,14 @@ body {
   border-radius: 5px;
 }
 
-.stazeni {
+.tlacitka__stazeni {
   margin-right: 30px;
+  background-color: #48418e;
 }
 
-.stazeni:hover,
-.informace:hover {
-  background-color: #48418e;
+.tlacitka__stazeni:hover,
+.tlacitka__informace:hover {
+  background-color: #25133d;
 }
 
 .telefon {
@@ -132,7 +136,15 @@ body {
   display: flex;
 }
 
-.detail h2 {
+.cestuj__letadlo,
+.chatuj__bubliny,
+.zazij__mapa {
+  width: 60px;
+}
+
+.cestuj__nadpis,
+.chatuj__nadpis,
+.zazij__nadpis {
   font-size: 20px;
   font-weight: 700;
   color: #48418e;
