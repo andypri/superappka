@@ -46,7 +46,8 @@ body {
   display: flex;
 }
 
-.horni-lista__aplikace {
+.aplikace {
+  text-decoration: none;
   font-weight: bold;
   padding: 15px 30px;
   margin: 0;
@@ -60,9 +61,7 @@ body {
   list-style: none;
 }
 
-.menu__design,
-.menu__funkce,
-.menu__odkaz {
+.menu__polozka {
   display: block;
   padding: 15px 30px;
   margin: 0;
@@ -70,9 +69,7 @@ body {
   color: #25133d;
 }
 
-.menu__design:hover,
-.menu__funkce:hover,
-.menu__odkaz:hover {
+.menu__polozka:hover {
   background-color: #48418e;
   color: white;
 }
@@ -89,24 +86,24 @@ body {
   position: relative;
 }
 
-.nazev {
+.obrazek__nazev {
   font-size: 90px;
   font-weight: 400;
   margin: 0;
 }
 
-.slogan {
+.obrazek__podnazev {
   font-size: 36px;
   font-weight: 300;
 }
 
-.tlacitka {
+.obrazek__tlacitka {
   display: flex;
   padding-bottom: 30px;
 }
 
-.tlacitka__stazeni,
-.tlacitka__informace {
+.obrazek__tlacitko--fialove,
+.obrazek__tlacitko {
   display: block;
   padding: 15px 30px;
   font-size: 20px;
@@ -116,17 +113,17 @@ body {
   border-radius: 5px;
 }
 
-.tlacitka__stazeni {
+.obrazek__tlacitko--fialove {
   margin-right: 30px;
   background-color: #48418e;
 }
 
-.tlacitka__stazeni:hover,
-.tlacitka__informace:hover {
+.obrazek__tlacitko--fialove:hover,
+.obrazek__tlacitko:hover {
   background-color: #25133d;
 }
 
-.telefon {
+.obrazek__telefon {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -136,23 +133,17 @@ body {
   display: flex;
 }
 
-.cestuj__letadlo,
-.chatuj__bubliny,
-.zazij__mapa {
+.sloupec__ikona {
   width: 60px;
 }
 
-.cestuj__nadpis,
-.chatuj__nadpis,
-.zazij__nadpis {
+.sloupec__nadpis {
   font-size: 20px;
   font-weight: 700;
   color: #48418e;
 }
 
-.cestuj,
-.chatuj,
-.zazij {
+.sloupec {
   text-align: center;
   padding: 30px;
 }

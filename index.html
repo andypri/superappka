@@ -14,13 +14,13 @@
     <!-- Flex nastavit na ul = první rodič všech li (potomků), margin + padding = 0, list-style = none -->
     <div class="obal">
       <header class="horni-lista">
-        <p class="horni-lista__aplikace">SUPER APPKA</p>
+        <a class="aplikace" href="index.html">SUPER APPKA</a>
 
         <nav>
           <ul class="menu">
-            <li><a class="menu__design" href="#">Úžasný design</a></li>
-            <li><a class="menu__funkce" href="#">Boží funkce</a></li>
-            <li><a class="menu__odkaz" href="#">Zdarma ke stažení</a></li>
+            <li><a class="menu__polozka" href="#">Úžasný design</a></li>
+            <li><a class="menu__polozka" href="#">Boží funkce</a></li>
+            <li><a class="menu__polozka" href="#">Zdarma ke stažení</a></li>
           </ul>
         </nav>
       </header>
@@ -28,62 +28,66 @@
       <!-- banner -->
       <main>
         <section class="obrazek">
-          <h1 class="nazev">Super Appka</h1>
+          <h1 class="obrazek__nazev">Super Appka</h1>
 
-          <p class="slogan">
+          <p class="obrazek__podnazev">
             Úžasná mobilní aplikace,
             <br />
             která Ti změní život.
           </p>
 
           <!-- Lze řešit přes inline-block i přes flexbox -->
-          <div class="tlacitka">
-            <a class="tlacitka__stazeni" href="#">Stáhnout zdarma</a>
-            <a class="tlacitka__informace" href="#">Více informací</a>
+          <div class="obrazek__tlacitka">
+            <a class="obrazek__tlacitko--fialove" href="#">Stáhnout zdarma</a>
+            <a class="obrazek__tlacitko" href="#">Více informací</a>
           </div>
 
-          <img class="telefon" src="images/telefon.png" alt="Telefon" />
+          <img
+            class="obrazek__telefon"
+            src="images/telefon.png"
+            alt="Telefon"
+          />
         </section>
 
         <!-- obsah se 3 sloupci -->
         <section class="detail">
-          <article class="cestuj">
+          <div class="sloupec">
             <img
-              class="cestuj__letadlo"
+              class="sloupec__ikona"
               src="images/letadlo.svg"
               alt="Letadlo"
             />
-            <h2 class="cestuj__nadpis">Cestuj po světě</h2>
-            <p>
+            <h2 class="sloupec__nadpis">Cestuj po světě</h2>
+            <p class="sloupec__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
               perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
               deleniti.
             </p>
-          </article>
+          </div>
 
-          <article class="chatuj">
+          <div class="sloupec">
             <img
-              class="chatuj__bubliny"
+              class="sloupec__ikona"
               src="images/bubliny.svg"
               alt="Bubliny"
             />
-            <h2 class="chatuj__nadpis">Chatuj s přáteli</h2>
-            <p>
+            <h2 class="sloupec__nadpis">Chatuj s přáteli</h2>
+            <p class="sloupec__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
               perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
               deleniti.
             </p>
-          </article>
+          </div>
 
-          <article class="zazij">
-            <img class="zazij__mapa" src="images/mapa.svg" alt="Mapa" />
-            <h2 class="zazij__nadpis">Zažij dobrodružství</h2>
-            <p>
+          <div class="sloupec">
+            <img class="sloupec__ikona" src="images/mapa.svg" alt="Mapa" />
+            <h2 class="sloupec__nadpis">Zažij dobrodružství</h2>
+            <p class="sloupec__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
               perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
               deleniti.
             </p>
-          </article>
+          </div>
         </section>
       </main>
 
